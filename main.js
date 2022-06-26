@@ -99,7 +99,7 @@ function showCountryDetail(data){
     // Test to swap image
     const weatherImage = data.current.condition.icon;
     console.log(weatherImage);
-    document.querySelector(".imageForWeather").innerHTML = `<img src='${weatherImage}'>`;
+    document.querySelector(".imageForWeather").innerHTML = `<img src='https:${weatherImage}'>`;
 
     // For the UV Information, have to create logical statement to determine level.
     const countryUvInfo = document.querySelector(".countryUvInfoLeft");
