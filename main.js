@@ -7,7 +7,7 @@ function getWeatherData(){
     console.log(userCountry); 
     const countryName = `${userCountry}`;
     // const countryName = "Singapore";
-    const getCountryData = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${countryName}&days=1&aqi=no&alerts=no`;
+    const getCountryData = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${countryName}&days=1&aqi=no&alerts=no`;
     fetch(getCountryData)
     .then((response) => response.json())
     .then((data) => {
@@ -55,7 +55,7 @@ function getCountryDetail(){
     console.log(userCountry); 
     const countryName = `${userCountry}`;
     // const countryName = "Singapore";
-    const getCountryData = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${countryName}&days=1&aqi=no&alerts=no`;
+    const getCountryData = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${countryName}&days=1&aqi=no&alerts=no`;
     fetch(getCountryData)
     .then((response) => response.json())
     .then((data) => {
