@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather API</title>
+</head>
+<body>
+    
+    <!--=============================Right Side==============================================-->
+
+    <div id="rightSideApp">
+        <!-- <div class="header>
+            <header id="rightPhoneHeader">
+                <ul>
+                    <li class="time">3:12</li>
+                    <li class="signal"></li>
+                    <li class="wifi"></li>
+                    <li class="battery"></li>
+                </ul>
+            </header>
+        </div> -->
+
+        <div class="rightTitle">
+            <h1 class="cityList">City List</h1>
+                <input type="text" placeholder="For which Country?" id="countryInput">
+                <button type="" onclick="getWeatherData()">Search</button>            
+        </div>
+
+        <div class="cityArea">
+            <div class="container">
+                <div class="col-12">
+                    <div class="card weatherCard1">
+                        <div class="card-body row">
+                            <div class="col-5">
+                                <a href="city.html" onclick="getCountryDetail();return false"><h5 class="card-title countryNameRight"></h5></a>
+                                <p class="card-text countryTimeRight"><br></p>         
+                                <p class="countryConditionRight"></p>          
+                            </div>
+                            <div class="col-7">
+                                <h5 class="countryTempRight"></h5>
+                                <p class="card-text"><span class="countryMaxTempRight""></span><span class="countryMinTempRight"></span></p>                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card weatherCard2">
+                        <!-- <div class="card-body">
+                        <h5 class="card-title">Software engineering</h5>
+                        <p class="card-text">COURSES<br>Web Development, Mobile Development, iOT, APIs</p>                   
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="col-12">
+                    <div class="card weatherCard3">
+                        <div class="card-body">
+                        <h5 class="card-title">Software engineering</h5>
+                        <p class="card-text">COURSES<br>Web Development, Mobile Development, iOT, APIs</p>                   
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div>
+            <!-- <button class="addWeather weatherButton" onclick="getWeatherData()">+</button> -->
+            <button class="addWeather weatherButton" onclick="createWeatherCard()">+</button>
+        </div>
+    </div>
+
+    <!--=========================Left Side===========================================-->
+
+    <div id="leftSideApp">
+        <!-- <div class="header>
+            <header id="leftPhoneHeader">
+                <ul>
+                    <li class="time">3:12</li>
+                    <li class="signal"></li>
+                    <li class="wifi"></li>
+                    <li class="battery"></li>
+                </ul>
+            </header>
+        </div> -->
+
+        <div class="leftTitle">
+            <h1 class="countryNameLeft">Escondido</h1>
+            <h6 class="countryTimeLeft">Jul 13 2021</h6>
+        </div>
+            <div class="container weatherBanner">
+                    <p class="imageForWeather"></p><br><br>
+                    <h1 class="countryTempLeft">18*</h1>
+                    <h6 class="countryConditionLeft">Cloudy</h6>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 minTemp">
+                    <div class="card-body">
+                    <p>Min Temp</p>
+                    <p class="countryMinTempLeft">7*<br></p>
+                    <p>Min</p>
+                    </div>
+                </div>
+                <div class="col-6 maxTemp">
+                    <div class="card-body">
+                    <p>Max Temp</p>
+                    <p class="countryMaxTempLeft">23*<br></p>
+                    <p>Max</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 uvIndicator">
+                    <div class="card-body">
+                    <p>UV indicator</p>
+                    <p class="countryUvLeft">1<br></p>
+                    <p class="countryUvInfoLeft">Low<br>Low level during all the day</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 feelsLike">
+                            <div class="card-body">
+                            <p>Feels like</p>
+                            <p class="countryFeelsLikeTempLeft">14*</p>
+                            </div>
+                    </div>
+                    <div class="col-6 pressure">
+                            <div class="card-body">
+                            <p>Pressure</p>
+                            <p class="countryPressureLeft">1002</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+       <div class="footer">
+            <button class="footer" onclick="getWeatherData()">Go back</button>
+        </div> 
+        -->
+    </div>
+    <!--<script src="script.js"></script>-->
+    <script src="main.js"></script>
+    <script src="bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
